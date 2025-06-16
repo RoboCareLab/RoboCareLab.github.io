@@ -102,22 +102,26 @@
             line-height: 1.6;
         }
         
+        /* Updated project-image CSS - removes white background and border */
         .project-image {
             width: 100%;
-            height: auto;
-            border: 1px solid #000;
-            background-color: white;
+            height: 200px;
+            /* border: 1px solid #000; */ /* Remove this line or comment it out */
+            /* background-color: white; */ /* Remove this line or comment it out */
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
 
+        /* Keep the img styling for proper image display */
         .project-image img {
-            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
             height: auto;
-            max-width: 400px;
             object-fit: contain;
-            border-radius: 8px; /* optional: adds rounded corners */
+            border-radius: 4px; /* Optional: adds slight rounding to the image itself */
         }
         
         .footer {
